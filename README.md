@@ -1,2 +1,1 @@
-# pcbs-overclock-calculator
-CPU overclocking calculator for PC Building Simulator.
+# https://puntherline.github.io/pcbs-overclock-calculator/
