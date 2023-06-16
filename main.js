@@ -55,9 +55,9 @@ var defaultSelectableRamClocks = [1866, 2133, 2400, 2667, 2800, 2933, 3000, 3066
 // ###############################################################################
 
 var stableCpuClock = 1;
-var unstableCpuClock = 10000;
+var unstableCpuClock = 99999;
 var stableRamClock = 1;
-var unstableRamClock = 10000;
+var unstableRamClock = 99999;
 
 var hideSlowerThanCpu = 500;
 var hideSlowerThanRam = 500;
@@ -90,7 +90,7 @@ function useDefaultRamClocks() { // Setting selectable RAM clocks to pre-defined
 function addSelectableRamClock() { // Manually adding a selectable RAM clock
 
 	// Get current value from input field and sanitize it
-	var frequency = Math.min(Math.max(Number(selectableRamClockElement.value), 1), 10000);
+	var frequency = Math.min(Math.max(Number(selectableRamClockElement.value), 1), 99999);
 
 	// Abort if duplicate
 	if (selectableRamClocks.indexOf(frequency) != -1) {

@@ -95,7 +95,7 @@
 
 			<p>Remember to set your Base Clock back to 100 MHz now.</p><br>
 
-			Add all selectable RAM clocks (one by one): <input id="selectableRamClock" step="1" type="number" min="1" max="10000" length="5">
+			Add all selectable RAM clocks (one by one): <input id="selectableRamClock" step="1" type="number" min="1" max="99999" length="5">
 			<button id="addSelectableRamClock">Add frequency to list</button>
 			<span id="selectableRamClockMessage"></span><br><br>
 			Or, if this works for you, <button id="useDefaultRamClocks">use default RAM clocks instead</button>.<br><br><br>
@@ -112,10 +112,10 @@
 			<!-- Controls -->
 			<div style="display: flex; flex-direction: row; margin-bottom: 8px;">
 				<div>
-					CPU is stable at <input id="stableCpuClock" type="number" min="1" max="10000" value="1" length="5">MHz and unstable at <input id="unstableCpuClock" type="number" min="1" max="10000" value="10000" length="5">MHz<br>
-					RAM is stable at <input id="stableRamClock" type="number" min="1" max="10000" value="1" length="5">MHz and unstable at <input id="unstableRamClock" type="number" min="1" max="10000" value="10000" length="5">MHz<br>
-					Hide CPU clocks that are <input id="hideSlowerThanCpu" type="number" min="0" max="10000" value="500" length="5">MHz below the stable clock<br>
-					Hide RAM clocks that are <input id="hideSlowerThanRam" type="number" min="0" max="10000" value="500" length="5">MHz below the stable clock
+					CPU is stable at <input id="stableCpuClock" type="number" min="1" max="99999" value="1" length="5">MHz and unstable at <input id="unstableCpuClock" type="number" min="1" max="99999" value="99999" length="5">MHz<br>
+					RAM is stable at <input id="stableRamClock" type="number" min="1" max="99999" value="1" length="5">MHz and unstable at <input id="unstableRamClock" type="number" min="1" max="99999" value="99999" length="5">MHz<br>
+					Hide CPU clocks that are <input id="hideSlowerThanCpu" type="number" min="0" max="99999" value="500" length="5">MHz below the stable clock<br>
+					Hide RAM clocks that are <input id="hideSlowerThanRam" type="number" min="0" max="99999" value="500" length="5">MHz below the stable clock
 				</div>
 				<div style="margin-left: 40px;">
 					<button id="backToStart">Back to start</button><br>
